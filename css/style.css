@@ -1,0 +1,432 @@
+body {
+    background-color: #F7F9FB;
+    /* background-image: url("../images/bg2.png"); */
+    /* Photo by Marjan Blan on Unsplash */
+    background-image: url("../images/pawel-czerwinski-Q4X078YTABg-unsplash.jpg");
+
+    /* Photo by Kseniya Lapteva,  Pawel Czerwinski on Unsplash */
+
+      
+    /* opacity: 0.5; */
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #081640;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  padding: 20px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color:white;
+
+}
+
+h2 {
+  font-size: 24px;
+  padding: 20px; 
+  background-color:#4342BC;
+}
+
+h3 {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+h2, h3 {
+
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  font-weight: bold;
+
+}
+p {
+  font-size: 20px;
+  color:#081640;
+  line-height: 180%;
+  /* padding: 10px 0px; */
+  /* padding: 40px; */
+  padding-top: 20px;
+}
+
+section li {
+  margin-left: 20px;
+  line-height: 150%;
+  list-style-type: disc;
+
+}
+
+img {
+  /* border:#00274C 2px solid; */
+  margin-top: 10px;
+}
+
+figcaption {
+  font-size: 12px;
+  text-align:center; 
+}
+
+
+/* ------------------------------- */
+
+main a:hover, main a:focus{
+  /* background-color: yellow;  */
+  /* text-decoration: underline; */
+  background-color: #8C8BFF;
+  /* background-color: #4342BC; */
+  
+  opacity: 1;
+}
+  
+  
+  
+.title_section {
+  color: white;
+  max-width: 1000px;  
+  padding-right: 20%;
+  /* padding-top: 10%; */
+  padding-bottom: 10%;
+  padding-left: 40px;
+}
+
+.title_section div {
+  position: absolute;
+  margin-top: 40px;
+  height: 4px;
+  width: 80px;
+  background-color: #B4BDD3;
+}
+
+.title_section p {
+  color: white;
+}
+
+/* Step 2a: Write selector/rule property to position the default position for the skip class element*/ 
+
+.skip a{
+  position: absolute; 
+  top: -40px;
+  color: black;
+}
+
+
+/* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+
+.skip a:focus {
+  position: absolute; 
+  top: 20px;
+  color: white;
+}
+
+/* Step 3: Write selector/rule property to style all elements when in focus*/
+:focus {
+  /* background-color: yellow;  */
+  border-width: 2px;
+  border-style: solid;
+
+}
+
+nav {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left; 
+  color: white; 
+  background-color:#081640;
+  width: 100%;
+
+  
+}
+
+nav ul {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  padding: 20px;
+  margin: 40px;
+  margin-top: 0px;
+}
+
+nav li a {
+  /* background: #FFCB05; */
+  /* color: white; */
+  /* border: black solid 1px;  */
+  /* border-radius: 10px; */
+  padding: 4px;
+  margin: 12px;
+  text-align: center;
+}
+
+
+
+h1 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+section {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  border-bottom: #ffffff 2px solid;
+  padding: 40px;
+  /* margin: 40px; */
+}
+
+section h2{
+  text-align: center;
+}
+
+
+
+
+.header-container {
+  /* display: flex; 
+  flex-direction:row; */
+  /* grid-template-columns: 2fr 1fr; */
+  width: 100%;
+  /* padding: 20px; */
+  
+  /* gap: 15px; */
+  /* background-color: #FFCB05; */
+  background-color: #4342BC;
+  /* background-image: url("../images/bg2.png"); */
+  /* opacity: 0.5; */
+  background-position: center;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  padding: 20px;
+  gap: 15px;
+  /* font-size: 12px; */
+  line-height: 180%;
+  justify-items: center;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.header-logo {
+  padding: 10px;
+  width: 150px;
+}
+
+.footer-title{
+  font-weight: bold;
+  color:#FFCB05;
+}
+
+article {
+  margin: 40px;
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr;
+  width: 100%;
+  /* padding: 5%; */
+  max-width: 1000px;
+  margin: auto;
+  
+  
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* This is the surprise article button */
+.surprise {
+  padding: 20px; 
+  background-color:#081640; 
+  border-radius: 100px;
+  margin: auto;
+  width: 200px;
+  grid-column: 1 / -1;
+}
+
+/* These are the cards for the articles */
+.article_link {
+  padding: 80px; 
+  background-color: #4342BC; 
+  /* background-color:#081640; */
+  /* opacity: 0.8; */
+  /* margin: 40px 0px; */
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  /* border: white 2px solid; */
+  /* border-radius: 10px; */
+}
+
+/* .article_link:hover {
+  background-color: #8C8BFF;
+} */
+
+.active {
+  color: yellow;
+}
+
+main a {
+  border-radius: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+/* .dropdown_menu {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* --------------------------------- */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #081640;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #081640}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+/* --------------------------------- */
+
+
+
+
+
+
+  
+/* For tablet */
+
+@media only screen and (min-width: 600px) {
+  
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* align-items: start; */
+    gap: 40px;
+    /* margin-top: 40px;
+    margin-bottom: 120px; */
+    }
+
+  main a {
+    grid-column: span 2;
+    text-align: center;
+    margin: auto;
+    /* border-radius: 10px; */
+    /* padding: 5%; */
+    
+  }
+
+  /* .header-container {
+    background-color:#FFCB05;
+  } */
+
+  /* p {
+    padding: 20px;
+  } */
+  
+  /* nav {
+    text-align: end;
+    padding: 30px 0px;
+
+  }
+
+  .about, .clients, .method-image, .contact-image {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .method, .contact, .about-image, .clients-image {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  
+  .text-block {
+    max-height: 250px;
+    overflow: auto;
+  } */
+  
+}
+
+
+  
+
+/* Unique CSS Part, code used from EvyatarDa on codepen
+
+https://codepen.io/EvyatarDa/pen/waKXMd?editors=1100
+
+Also used chatGPT to help me understand why the code wasn't implementing properly and what selectors I should use
+*/
+
+/* Top and Bottom borders come in */
+/* Ensures the navigation links are positioned relative to their pseudo-elements */
+nav.topBotomBordersIn ul li a {
+  position: relative;
+  display: inline-block; /* Adjust display as needed for your design */
+  padding: 10px 20px; /* Example padding, adjust as needed */
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Set the text color as needed */
+}
+
+/* Style for the animated borders */
+nav.topBotomBordersIn ul li a:before, 
+nav.topBotomBordersIn ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white; /* Color of the animated borders */
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+nav.topBotomBordersIn ul li a:before {
+  top: 0;
+  transform: translateY(-10px);
+}
+
+nav.topBotomBordersIn ul li a:after {
+  bottom: 0;
+  transform: translateY(10px);
+}
+
+nav.topBotomBordersIn ul li a:hover:before, 
+nav.topBotomBordersIn ul li a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
